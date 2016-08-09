@@ -6,13 +6,6 @@ body { font-family: 'Raleway', sans-serif; padding-top: 70px;}
 
 body h1, h2, nav, .nav-pills { font-family: 'Josefin Sans', sans-serif; }
 
-.two-columns { display: flex;                  
-    			flex-direction: row;            
-    			flex-wrap: nowrap;              
-    			justify-content: space-between; }
-
-.two-columns > div { width: 500px;
-    				 height: 100%; }
 
 
 
@@ -101,9 +94,10 @@ h1.margin-skills::before { margin-left: 5px; }
 
 .mypic { width: 40%;
 		 height: 40%;
-		 float: left;
 		 margin-right: 25px;
-		 margin-bottom: 25px; }
+		 margin-bottom: 25px;
+		 float: left;
+		 width: 200px; }
 
 
 
@@ -269,17 +263,17 @@ button.btn.btn-primary:hover {background-color: #2045BF;
 	.jumbotron { background-size: 150%; }
 }
 
+
 @media screen and (max-width: 1200px) {
 
 .center-div > div { width: 275px;
 					height: 215px; }
 
-.two-columns > div { width: 400px; }
-
 .mypic { width: 190px; }
 
 
 }
+
 
 @media screen and (max-width: 991px) {
 
@@ -288,26 +282,20 @@ button.btn.btn-primary:hover {background-color: #2045BF;
 
 .two-columns > div { width: 300px; }
 
-.mypic { width: 180px; }
+.raleway { text-align: center; }
 
+.mypic { width: 200px;
+		 margin-right: 0;
+		 float: none; } 
 }
+
 
 @media screen and (max-width: 810px) {
 
 .jumbotron { background-size: 150%; }
 
-.mypic { float: none; 
-		 width: 220px;
-		 margin-right: 0;}
-
-.two-columns { flex-direction: column;
-			   align-items: center;
- 			   justify-content: center;
- 			 	text-align: center; }
-
-.two-columns > div { width: 100%; }
-
 }
+
 
 @media screen and (max-width: 680px) {
 
@@ -334,11 +322,13 @@ ul.dropdown-menu.dropdown-menu-right a { color: #fff;
 
 }
 
+
 @media screen and (max-width: 550px) {
 
 .jumbotron { background-size: 250%; }
 
 }
+
 
 @media screen and (max-width: 375px) {
 
